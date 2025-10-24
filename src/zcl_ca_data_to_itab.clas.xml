@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CA_DATA_TO_ITAB</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Upload Data to Internal Table</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONVERT_BY_COMPONENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Single Data by Component Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONVERT_EXIT_INPUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Work Area Data by Domain from input Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_ITAB_UPLOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Internal Table Upload (All fields type string)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_MAPPING_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Mapping Table (if input mapping line)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CSV_TO_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Upload CSV to Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DATA_TO_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Upload Excel/CSV to Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DOWNLOAD_EXCEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Download Excel File (Excel Workbench required)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXCEL_TO_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Upload Excel to Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FLUSH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clear Global Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EXTENSION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Extension from input File (Local/Server)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FILE_PATH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Excel Extension (.TXT, .XLSX, .CSV) search help</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SAVE_DIRECTORY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Save Directory (for Download)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_RETURN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RAW_DATA_TO_INPUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Raw Upload data (all field string) to Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert text to Return Parameter 00(162)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_BY_COMPONENT</CMPNAME>
+     <SCONAME>IV_TABIX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Row Index of Internal Tables</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_EXIT_INPUT</CMPNAME>
+     <SCONAME>IV_TABIX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Row Index of Internal Tables</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ITAB_UPLOAD</CMPNAME>
+     <SCONAME>IV_STRUCT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of a structure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_MAPPING_DATA</CMPNAME>
+     <SCONAME>RT_MAP_ITAB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Mapping Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CSV_TO_ITAB</CMPNAME>
+     <SCONAME>ET_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CSV_TO_ITAB</CMPNAME>
+     <SCONAME>IV_DELIMETER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DATA_TO_ITAB</CMPNAME>
+     <SCONAME>ET_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCEL_TO_ITAB</CMPNAME>
+     <SCONAME>ET_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXCEL_TO_ITAB</CMPNAME>
+     <SCONAME>IV_SOURCE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <SCONAME>ES_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <SCONAME>EV_REMAIN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>General Flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <SCONAME>IV_MSGTYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Message Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <SCONAME>IV_PASS_TO_SYSTEM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pass message to System variable (SY)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEXT_TO_MSGID</CMPNAME>
+     <SCONAME>IV_TABIX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Row Index of Internal Tables</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
