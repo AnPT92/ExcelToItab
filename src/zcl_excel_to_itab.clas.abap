@@ -1,4 +1,4 @@
-class ZCL_CA_DATA_TO_ITAB definition
+class ZCL_EXCEL_TO_ITAB definition
   public
   final
   create public .
@@ -171,7 +171,7 @@ ENDCLASS.
 
 
 
-CLASS ZCL_CA_DATA_TO_ITAB IMPLEMENTATION.
+CLASS ZCL_EXCEL_TO_ITAB IMPLEMENTATION.
 
 
   METHOD convert_by_component.
