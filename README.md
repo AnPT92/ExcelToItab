@@ -8,7 +8,7 @@ This utility is designed for developers and functional consultants who frequentl
 
 ## 🚀 Features
 
-- 📂 Supports both **Excel (.xlsx)** and **CSV (.csv)** formats  
+- 📂 Supports **Excel (.xlsx)** and **CSV (.csv, .txt)** formats  
 - 🔄 Converts data directly into **internal tables**  
 - ⚙️ Flexible field mapping and automatic data type detection  
 - 🧩 Easy to integrate into existing ABAP programs  
@@ -23,27 +23,3 @@ This utility is designed for developers and functional consultants who frequentl
 2. Instantiate the class `ZCL_EXCEL_TO_ITAB`.
 3. Call the method to load and convert file contents into an internal table.
 4. Use the resulting data for your business logic.
-
----
-
-## 💻 Example Usage
-
-```abap
-DATA: lo_excel_reader TYPE REF TO zcl_excel_to_itab,
-      lt_data         TYPE STANDARD TABLE OF string.
-
-" Create instance
-CREATE OBJECT lo_excel_reader.
-
-" Load Excel or CSV file
-lo_excel_reader->load_file(
-  i_file_path = 'C:\temp\data.xlsx'    " or 'AL11 path' or 'Server path'
-).
-
-" Convert to internal table
-lt_data = lo_excel_reader->get_data( ).
-
-" Display or process data
-LOOP AT lt_data INTO DATA(ls_row).
-  WRITE: / ls_row.
-ENDLOOP.
